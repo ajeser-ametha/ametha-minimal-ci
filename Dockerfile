@@ -1,6 +1,7 @@
 FROM rustlang/rust:nightly
 RUN cargo install cargo-audit
 RUN cargo install sccache --features=all
+RUN cargo install cargo-release
 
 # cargo fmt
 RUN cargo install cargo-make 
