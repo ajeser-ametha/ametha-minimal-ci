@@ -1,4 +1,7 @@
 FROM rustlang/rust:nightly
+
+RUN apt install -y jq nodejs npm
+
 RUN rustup component add clippy
 RUN cargo install cargo-audit
 RUN cargo install sccache --features=all
