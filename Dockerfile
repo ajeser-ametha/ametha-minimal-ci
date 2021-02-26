@@ -1,6 +1,6 @@
 FROM rustlang/rust:nightly
 
-RUN apt install -y jq nodejs npm
+RUN apt install -y jq
 
 RUN rustup component add clippy
 RUN cargo install cargo-audit
